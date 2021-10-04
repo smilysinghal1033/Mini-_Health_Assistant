@@ -25,7 +25,54 @@ public:
     void table() {
       }
 
-    void facts() {
+    void facts() { 
+ SetConsoleTextAttribute(color, 15);
+        cout << "\n\n\n\t\t\t";
+        cout << "Blood pressure categories\n\n\t\t\t";
+        SetConsoleTextAttribute(color, 2);
+        cout << "Normal\n\t\t\t";
+        SetConsoleTextAttribute(color, 15);
+        cout << "Blood pressure numbers of less than 120/80 mm Hg are considered within the normal range.\n\t\t\t"
+                "If your results fall into this category, stick with heart-healthy habits like following\n\t\t\t"
+                "a balanced diet and getting regular exercise.\n";
+        cout << "\n\t\t\t";
+        SetConsoleTextAttribute(color, 6);
+        cout << "Elevated\n\t\t\t";
+        SetConsoleTextAttribute(color, 15);
+        cout << "Elevated blood pressure is when readings consistently range from 120-129 systolic\n\t\t\t"
+                "and less than 80 mm Hg diastolic. People with elevated blood pressure are likely to\n\t\t\t"
+                "develop high blood pressure unless steps are taken to control the condition.\n\t\t\t";
+        cout << "\n\t\t\t";
+        SetConsoleTextAttribute(color, 14);
+        cout << "Hypertension Stage 1\n\t\t\t";
+        SetConsoleTextAttribute(color, 15);
+        cout << "Hypertension Stage 1 is when blood pressure consistently ranges from 130-139 systolic\n\t\t\t"
+                "or 80-89 mm Hg diastolic. At this stage of high blood pressure, doctors are likely to\n\t\t\t"
+                "prescribe lifestyle changes and may consider adding blood pressure medication based\n\t\t\t"
+                "on your risk of atherosclerotic cardiovascular disease (ASCVD), \n\t\t\t"
+                "such as heart attack or stroke.\n";
+        cout << "\n\t\t\t";
+        SetConsoleTextAttribute(color, 4);
+        cout << "Hypertension Stage 2\n\t\t\t";
+        SetConsoleTextAttribute(color, 15);
+        cout << "Hypertension Stage 2 is when blood pressure consistently ranges at 140/90 mm Hg or higher.\n\t\t\t"
+                "At this stage of high blood pressure, doctors are likely to prescribe a combination of\n\t\t\t"
+                "blood pressure medications and lifestyle changes.\n\t\t\t";
+        cout << "\n\t\t\t";
+        SetConsoleTextAttribute(color, 12);
+        cout << "Hypertensive crisis\n\t\t\t";
+        SetConsoleTextAttribute(color, 15);
+        cout << "This stage of high blood pressure requires medical attention. \n\t\t\t"
+                "If your blood pressure readings suddenly exceed 180/120 mm Hg, wait \n\t\t\t"
+                "five minutes and then test your blood pressure again. If your readings \n\t\t\t"
+                "are still unusually high, contact your doctor immediately.\n\t\t\t"
+                "You could be experiencing a hypertensive crisis.\n\t\t\t"
+                "If your blood pressure is higher than 180/120 mm Hg and you are\n\t\t\t"
+                "experiencing signs of possible organ damage such as chest pain,\n\t\t\t"
+                "shortness of breath, back pain, numbness/weakness, change in vision\n\t\t\t"
+                "or difficulty speaking, do not wait to see if your\n\t\t\t"
+                "pressure comes down on its own.";
+    }
       }
 };
 
