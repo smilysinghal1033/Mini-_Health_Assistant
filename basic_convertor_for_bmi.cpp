@@ -17,46 +17,36 @@ int main() {
             "\n 4.Inches (in) To Centimeter(cm)\n 5.Feet(ft) To Inches(in)\n 6.Feet(ft) To Centimeter(cm) \n\n";
     cin >> sw;
     switch (sw) {
-        case 1:
+        case 1: //Pound to Kg//
             cout << "Enter The Weight Pounds(lbs)\n";
             cin >> Pound;
-            cout << "Weight in Kg is " << (Pound  Kg_1);
+            cout << "Weight in Kg is " << (Pound / Kg_1);
             break;
-        case 2:
+        case 2: //kg to pound//
             cout << "Enter The Weight Kilogram(Kg)\n";
             cin >> Kg;
-            cout << "Weight in Pound(lbs) is " << (Kg  Pound_1);
+            cout << "Weight in Pound(lbs) is " << (Kg * Pound_1);
             break;
-        case 3:
+        case 3: //cm to inches//
             cout << "Enter The Height in Centimeter(Cm)\n";
             cin >> Cm;
-            cout << "Height in Inches(in) Is =  " << (Cm  Inches_1);
+            cout << "Height in Inches(in) Is =  " << (Cm / Inches_1);
             break;
-        case 4:
+        case 4: //inches to cm//
             cout << "Enter The Height in Inches(in)\n";
             cin >> Inches;
-            cout << "Height in Centimeter(Cm) Is =  " << (Inches  Cm_1);
+            cout << "Height in Centimeter(Cm) Is =  " << (Inches * Cm_1);
             break;
-        case 5:
+        case 5: //feet to inches//
             cout << "Enter The Height in Feet(ft)\n";
             cin >> Feet;
-            cout << "Height in Inches(in) Is =  " << (Feet  Feet_1);
+            cout << "Height in Inches(in) Is =  " << (Feet * Feet_1);
             break;
-        case 6:
+        case 6: //feet to cm//
             cout << "Enter The Height in Feet(ft)\n";
             cin >> Feet;
-            cout << "Height in Centimeter(Cm) Is =  " << (Feet  Feet_2);
+            cout << "Height in Centimeter(Cm) Is =  " << (Feet * Feet_2);
             break;
     }
-
     return 0;
 }
-
-
-/* Pound to Kg
- * kg to pound
- * cm to inches
- * inches to cm
- * feet to inches
- * feet to cm
- */
