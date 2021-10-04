@@ -18,34 +18,34 @@ public:
 
     void High() const {
         SetConsoleTextAttribute(color, 15);
-        if (( <= SpO2) && (SpO2 < )) {
+        if ((95 <= SpO2) && (SpO2 < 100)) {
             cout << "\n\n\t\t\t";
             SetConsoleTextAttribute(color, 2);
             cout << "NORMAL";
             SetConsoleTextAttribute(color, 15);
             cout << "BLOOD OXYGEN LEVELS ";
             cout << endl;
-        } else if (( <= SpO2) && (SpO2 < )) {
+        } else if ((91 <= SpO2) && (SpO2 < 94)) {
             cout << "\n\n\t\t\t";
             SetConsoleTextAttribute(color, 6);
             cout << "CONCERNING";
             SetConsoleTextAttribute(color, 15);
             cout << "BLOOD OXYGEN LEVELS";
             cout << endl;
-        } else if (( <= SpO2) && (SpO2 < )) {
+        } else if ((86 <= SpO2) && (SpO2 < 90)) {
             cout << "\n\n\t\t\t";
             SetConsoleTextAttribute(color, 14);
             cout << "LOW";
             SetConsoleTextAttribute(color, 15);
             cout << "HYPOXIC BLOOD OXYGEN LEVELS";
             cout << endl;
-        } else if (( <= SpO2) && (SpO2 < )) {
+        } else if ((80 <= SpO2) && (SpO2 < 85)) {
             cout << "\n\n\t\t\t";
             SetConsoleTextAttribute(color, 4);
             cout << "LOW OXYGEN SATURATION AFFECTS YOUR BRAIN";
             SetConsoleTextAttribute(color, 15);
             cout << endl;
-        } else if (SpO2 <= ) {
+        } else if (SpO2 <= 67) {
             cout << "\n\n\t\t\t";
             SetConsoleTextAttribute(color, 12);
             cout << "CYANOSIS";
