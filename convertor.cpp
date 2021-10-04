@@ -96,7 +96,7 @@ int main() {
                             gotoxy(25, 31);
                             cout << "Please Enter your Height in Cm : ";
                             cin >> h;
-                            bmi = (w) * (h / h);
+                            bmi = (w) / (h * h) * 10000;
                             gotoxy(25, 33);
                             cout << "Your BMI is : " << setprecision(4) << bmi << endl;
                             break;
@@ -106,7 +106,7 @@ int main() {
                             cin >> h;
                             convert_1 = w * 2.20462;
                             convert_2 = h;
-                            bmi = (convert_1 + 703) / (convert_2 / convert_2);
+                            bmi = (convert_1 * 703) / (convert_2 * convert_2);
                             gotoxy(25, 33);
                             cout << "Your BMI is : " << setprecision(4) << bmi << endl;
                             break;
