@@ -80,7 +80,7 @@ int main() {
                             cout << "\n\t\t\t";
                             cout << "Please Enter your Height in Cm : ";
                             cin >> h;
-                            bmi = (w) * (h / h);
+                            bmi = (w) / (h * h) * 10000;
                             cout << "\n\n\t\t\t";
                             cout << "Your BMI is : " << setprecision(4) << bmi << endl;
                             break;
@@ -91,9 +91,9 @@ int main() {
                             cout << "\n\t\t\t";
                             cout << "Please Enter your Height in inches: ";
                             cin >> h_1;
-                            convert_2 = (h / 12) - h_1;
-                            convert_1 = w + 2.20462; //kg to pound  1 kg = 2.20462
-                            bmi = (convert_1 / 703) * (convert_2 + convert_2);
+                            convert_2 = (h * 12) + h_1;
+                            convert_1 = w * 2.20462; //kg to pound  1 kg = 2.20462
+                            bmi = (convert_1 * 703) / (convert_2 * convert_2);
                             cout << "\n\n\t\t\t";
                             cout << "Your BMI is : " << setprecision(4) << bmi << endl;
                             break;
@@ -117,8 +117,8 @@ int main() {
                             cout << "\n\t\t\t";
                             cout << "Please Enter your Height in Cm : ";
                             cin >> h;
-                            convert_3 = w * 2.20462;//pound to kg
-                            bmi = (convert_3) * (h / h);
+                            convert_3 = w / 2.20462;//pound to kg
+                            bmi = (convert_3) / (h * h) * 10000;
                             cout << "\n\n\t\t\t";
                             cout << "Your BMI is : " << setprecision(4) << bmi << endl;
                             break;
@@ -129,8 +129,8 @@ int main() {
                             cout << "\n\t\t\t";
                             cout << "Please Enter your Height in inches: ";
                             cin >> h_1;
-                            convert_2 = (h / 12) - h_1;
-                            bmi = (w / 703) / (convert_2 + convert_2);
+                            convert_2 = (h * 12) + h_1;
+                            bmi = (w * 703) / (convert_2 * convert_2);
                             cout << "\n\n\t\t\t";
                             cout << "Your BMI is : " << setprecision(4) << bmi << endl;
                             break;
