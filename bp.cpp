@@ -20,6 +20,43 @@ public:
     }
 
     void High() const {
+SetConsoleTextAttribute(color, 15);
+        if (sys <= 120 && dia <= 80) {
+            cout << "\n\n\t\t\t";
+            cout << "YOUR BP IS ";
+            SetConsoleTextAttribute(color, 2);
+            cout << "NORMAL RANGE";
+            SetConsoleTextAttribute(color, 15);
+            cout << endl;
+        } else if (sys <= 129 && dia < 80) {
+            cout << "\n\n\t\t\t";
+            cout << "YOUR BP IS ";
+            SetConsoleTextAttribute(color, 6);
+            cout << "ELEVATED";
+            SetConsoleTextAttribute(color, 15);
+            cout << endl;
+        } else if (sys <= 139 || dia <= 89) {
+            cout << "\n\n\t\t\t";
+            cout << "YOUR BP IS ";
+            SetConsoleTextAttribute(color, 14);
+            cout << "HIGH (HYPERTENSION STAGE 1)";
+            SetConsoleTextAttribute(color, 15);
+            cout << endl;
+        } else if (sys <= 179 || dia <= 119) {
+            cout << "\n\n\t\t\t";
+            cout << "YOUR BP IS ";
+            SetConsoleTextAttribute(color, 4);
+            cout << "HIGH (HYPERTENSION STAGE 2)";
+            SetConsoleTextAttribute(color, 15);
+            cout << endl;
+        } else if (sys >= 180 && dia >= 120) {
+            cout << "\n\n\t\t\t";
+            cout << "YOUR BP IS ";
+            SetConsoleTextAttribute(color, 12);
+            cout << "VERY HIGH";
+            SetConsoleTextAttribute(color, 15);
+            cout << endl;
+        }
       }
 
     void table() {
