@@ -64,7 +64,46 @@ public:
         }
     }
 
-   
+    void table() {
+        cout << "\n\n\t\t\t\t\t\t";
+        SetConsoleTextAttribute(color, 14);
+        cout << "          BP REFERENCE TABLE";
+        SetConsoleTextAttribute(color, 15);
+        cout << "\n\n\t\t\t";
+        cout << "BLOOD PRESSURE CATEGORY" << "\t\t" << "SYSTOLIC (upper number)" << "\t\t" << "DIASTOLIC (lower number)"
+             << endl << endl;
+        cout << "\n\n\t\t\t";
+        SetConsoleTextAttribute(color, 2);
+        cout << "1. NORMAL       " << "\t\t" << "    LESS THAN 120 " << "\t" << " -AND-" << "        LOWER THAN 80"
+             << endl;
+        cout << "\n\n\t\t\t";
+        SetConsoleTextAttribute(color, 6);
+        cout << "2. ELEVATED     " << "\t\t" << "      120 - 129 " << "\t" << " -AND-" << "        LESS THAN 80"
+             << endl;
+        cout << "\n\n\t\t\t";
+        SetConsoleTextAttribute(color, 14);
+        cout << "3. HIGH BLOOD PRESSURE" << "\t\t" << "      130 - 139 " << "\t" << "  -OR-" << "           80 - 89"
+             << endl;
+        cout << "\t\t\t";
+        cout << "   (HYPERTENSION) STAGE1";
+        cout << "\n\n\n\t\t\t";
+        SetConsoleTextAttribute(color, 4);
+        cout << "4. HIGH BLOOD PRESSURE" << "\t\t" << "    140 OR HIGHER " << "\t" << "  -OR-"
+             << "         90 OR HIGHER"
+             << endl;
+        cout << "\t\t\t";
+        SetConsoleTextAttribute(color, 4);
+        cout << "   (HYPERTENSION) STAGE2";
+        cout << "\n\n\n\t\t\t";
+        SetConsoleTextAttribute(color, 12);
+        cout << "5. HYPERTENSIVE CRISIS" << "\t\t" << "   HIGHER THAN 180" << "\t" << "-AND/OR-"
+             << "     HIGHER THAN 120"
+             << endl;
+        SetConsoleTextAttribute(color, 12);
+        cout << "\t\t\t";
+        cout << "   (consult you doctor\n\t\t\t    immediately)";
+        SetConsoleTextAttribute(color, 15);
+    }
 
     void facts() {
         SetConsoleTextAttribute(color, 15);
